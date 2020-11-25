@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/pruebas-internas/microservices-demo/frontend:v0.2.1', './src/frontend/Dockerfile']
+  args: ['build', '-t', 'gcr.io/pruebas-internas/microservices-demo/frontend:v0.2.1', './src/frontend/']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/pruebas-internas/microservices-demo/frontend:v0.2.1', '.']
 - name: 'gcr.io/cloud-builders/kubectl'
