@@ -36,14 +36,14 @@ Looking for the old Hipster Shop frontend interface? Use the [manifests](https:/
 1. **[Create a Google Cloud Platform project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project)** or use an existing project. Set the `PROJECT_ID` environment variable and ensure the Google Kubernetes Engine API is enabled.
 
 ```
-PROJECT_ID="<your-project-id>"
+PROJECT_ID="pruebas-internas"
 gcloud services enable container --project ${PROJECT_ID}
 ```
 
 2. **Clone this repository.**
 
 ```
-git clone https://github.com/GoogleCloudPlatform/microservices-demo.git
+git clone https://github.com/Amarello-Tecnologias/microservices-demo.git
 cd microservices-demo
 ```
 
@@ -51,7 +51,7 @@ cd microservices-demo
 
 ```
 ZONE=us-central1-b
-gcloud container clusters create onlineboutique \
+gcloud container clusters create hipstershop-demo \
     --project=${PROJECT_ID} --zone=${ZONE} \
     --machine-type=e2-standard-2 --num-nodes=4
 ```
